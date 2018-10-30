@@ -40,6 +40,9 @@
 		139D97AC21886DCA008C4989 /* UserNotificationsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AB21886DCA008C4989 /* UserNotificationsConfiguration.swift */; };
 		139D97AE21886E22008C4989 /* UserNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */; };
 		139D97B021886EB1008C4989 /* UserNotificationsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */; };
+		139D97B22188F6C9008C4989 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B12188F6C9008C4989 /* Cell.swift */; };
+		139D97B52188FBF2008C4989 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B42188FBF2008C4989 /* NotificationRequestViewController.swift */; };
+		139D97B721890D2D008C4989 /* NotificationRequestDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B621890D2D008C4989 /* NotificationRequestDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +105,9 @@
 		139D97AB21886DCA008C4989 /* UserNotificationsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsConfiguration.swift; sourceTree = "<group>"; };
 		139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsViewController.swift; sourceTree = "<group>"; };
 		139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsDataController.swift; sourceTree = "<group>"; };
+		139D97B12188F6C9008C4989 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		139D97B42188FBF2008C4989 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
+		139D97B621890D2D008C4989 /* NotificationRequestDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,6 +223,7 @@
 			children = (
 				13065A71218646DD0044DB50 /* AppCoordinator.swift */,
 				13065A5F218646780044DB50 /* AppDelegate.swift */,
+				139D97B12188F6C9008C4989 /* Cell.swift */,
 				13065A73218647840044DB50 /* RootViewController.swift */,
 			);
 			path = App;
@@ -288,8 +295,18 @@
 				139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */,
 				139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */,
 				139D97A921886DB0008C4989 /* UserNotifications+Utilities.swift */,
+				139D97B32188FBDF008C4989 /* NotificationRequest */,
 			);
 			path = UserNotifications;
+			sourceTree = "<group>";
+		};
+		139D97B32188FBDF008C4989 /* NotificationRequest */ = {
+			isa = PBXGroup;
+			children = (
+				139D97B621890D2D008C4989 /* NotificationRequestDataController.swift */,
+				139D97B42188FBF2008C4989 /* NotificationRequestViewController.swift */,
+			);
+			path = NotificationRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +423,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				13065A56218644530044DB50 /* DebugViewController.swift in Sources */,
+				139D97B52188FBF2008C4989 /* NotificationRequestViewController.swift in Sources */,
+				139D97B721890D2D008C4989 /* NotificationRequestDataController.swift in Sources */,
 				13065A8221865EF00044DB50 /* DirectoryDebugConfiguration.swift in Sources */,
 				13065A582186453F0044DB50 /* UIView+Autolayout.swift in Sources */,
 				139D97A02187EFDE008C4989 /* ManagedObjectsDataController.swift in Sources */,
@@ -438,6 +457,7 @@
 			files = (
 				13065A72218646DD0044DB50 /* AppCoordinator.swift in Sources */,
 				13065A60218646780044DB50 /* AppDelegate.swift in Sources */,
+				139D97B22188F6C9008C4989 /* Cell.swift in Sources */,
 				13065A8D218666B90044DB50 /* Database.xcdatamodeld in Sources */,
 				13065A74218647840044DB50 /* RootViewController.swift in Sources */,
 			);

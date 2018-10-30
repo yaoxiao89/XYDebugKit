@@ -205,7 +205,7 @@ extension UserNotificationsViewController {
     
     private func bindCell(_ cell: DebugCell, to category: UNNotificationCategory) {
         cell.titleLabel.text = category.identifier
-        cell.accessoryType = .none
+        cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .none
     }
     
@@ -214,6 +214,29 @@ extension UserNotificationsViewController {
         cell.titleLabel.text = request.content.body
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .default
+    }
+    
+}
+
+// MARK: - UITableViewDelegate
+
+extension UserNotificationsViewController {
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let s = Section(rawValue: indexPath.section) else { return }
+        switch s {
+        case .notifications:
+            let note = dataController.notifications[indexPath.row]
+            let request = note.request
+            let requestVC = NotificationRequestViewController(request: request)
+            navigationController?.pushViewController(requestVC, animated: true)
+        case .pendingRequests:
+            let request = dataController.pendingRequests[indexPath.row]
+            let requestVC = NotificationRequestViewController(request: request)
+            navigationController?.pushViewController(requestVC, animated: true)
+            break
+        default: break
+        }
     }
     
 }

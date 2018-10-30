@@ -20,7 +20,9 @@ class AppCoordinator {
     
     init() {
         let rootVC = RootViewController()
-        rootViewController = rootVC
+        let navController = UINavigationController(rootViewController: rootVC)
+        navController.navigationBar.prefersLargeTitles = true
+        rootViewController = navController
         rootVC.delegate = self
     }
     

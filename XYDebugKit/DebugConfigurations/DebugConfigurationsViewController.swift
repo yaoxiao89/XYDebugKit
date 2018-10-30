@@ -84,6 +84,8 @@ extension DebugConfigurationsViewController {
             cell.titleLabel.text = config.url.absoluteString
         case let config as CoreDataDebugConfiguration:
             cell.titleLabel.text = config.container.name
+        case let config as UserNotificationsConfiguration:
+            cell.titleLabel.text = "Current"
         default:
             os_log("Unsupported debug configuration: %@", String(describing: configuration))
         }

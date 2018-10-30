@@ -93,6 +93,9 @@ extension DebugViewController: DebugConfigurationsViewControllerDelegate {
         case let config as CoreDataDebugConfiguration:
             let coreDataVC = CoreDataViewController(configuration: config)
             contentViewController.pushViewController(coreDataVC, animated: true)
+        case let config as UserNotificationsConfiguration:
+            let notificationsVC = UserNotificationsViewController(configuration: config)
+            contentViewController.pushViewController(notificationsVC, animated: true)
         default:
             os_log("Unsupported debug configuration: %@", String(describing: configuration))
         }

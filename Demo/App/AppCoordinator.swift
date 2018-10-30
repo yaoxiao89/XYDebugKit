@@ -7,6 +7,7 @@
 //
 
 import CoreData
+import UserNotifications
 import UIKit
 import XYDebugKit
 import os.log
@@ -82,7 +83,8 @@ extension AppCoordinator: RootViewControllerDelegate {
             let debugVC = DebugViewController(configurations: [
                 UserDefaultsDebugConfiguration(userDefaults: UserDefaults.standard, suiteName: nil),
                 DirectoryDebugConfiguration(url: directoryURL),
-                CoreDataDebugConfiguration(container: container)
+                CoreDataDebugConfiguration(container: container),
+                UserNotificationsConfiguration(notificationCenter: UNUserNotificationCenter.current())
             ])
             debugVC.delegate = self
             rootViewController.present(debugVC, animated: true, completion: nil)

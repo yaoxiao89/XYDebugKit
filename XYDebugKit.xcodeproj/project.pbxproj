@@ -36,6 +36,10 @@
 		139D97A22187F110008C4989 /* NSManagedObject+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97A12187F110008C4989 /* NSManagedObject+Debug.swift */; };
 		139D97A52187F360008C4989 /* ManagedObjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97A42187F360008C4989 /* ManagedObjectViewController.swift */; };
 		139D97A72187F6A2008C4989 /* ManagedObjectDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97A62187F6A2008C4989 /* ManagedObjectDataController.swift */; };
+		139D97AA21886DB0008C4989 /* UserNotifications+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97A921886DB0008C4989 /* UserNotifications+Utilities.swift */; };
+		139D97AC21886DCA008C4989 /* UserNotificationsConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AB21886DCA008C4989 /* UserNotificationsConfiguration.swift */; };
+		139D97AE21886E22008C4989 /* UserNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */; };
+		139D97B021886EB1008C4989 /* UserNotificationsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +98,10 @@
 		139D97A12187F110008C4989 /* NSManagedObject+Debug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObject+Debug.swift"; sourceTree = "<group>"; };
 		139D97A42187F360008C4989 /* ManagedObjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectViewController.swift; sourceTree = "<group>"; };
 		139D97A62187F6A2008C4989 /* ManagedObjectDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectDataController.swift; sourceTree = "<group>"; };
+		139D97A921886DB0008C4989 /* UserNotifications+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserNotifications+Utilities.swift"; sourceTree = "<group>"; };
+		139D97AB21886DCA008C4989 /* UserNotificationsConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsConfiguration.swift; sourceTree = "<group>"; };
+		139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsViewController.swift; sourceTree = "<group>"; };
+		139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationsDataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +150,7 @@
 				13065A4A218640460044DB50 /* DebugConfigurations */,
 				13065A7E21865E900044DB50 /* Directory */,
 				13065A502186415C0044DB50 /* UserDefaults */,
+				139D97A821886D8D008C4989 /* UserNotifications */,
 				13065A51218641890044DB50 /* Supporting Files */,
 			);
 			path = XYDebugKit;
@@ -272,6 +281,17 @@
 			path = ManagedObject;
 			sourceTree = "<group>";
 		};
+		139D97A821886D8D008C4989 /* UserNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				139D97AB21886DCA008C4989 /* UserNotificationsConfiguration.swift */,
+				139D97AF21886EB1008C4989 /* UserNotificationsDataController.swift */,
+				139D97AD21886E22008C4989 /* UserNotificationsViewController.swift */,
+				139D97A921886DB0008C4989 /* UserNotifications+Utilities.swift */,
+			);
+			path = UserNotifications;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -392,11 +412,15 @@
 				13065A89218666170044DB50 /* CoreDataViewController.swift in Sources */,
 				13065A7B218658350044DB50 /* UserDefaultsViewController.swift in Sources */,
 				13065A7D21865AD20044DB50 /* UserDefaultsDataController.swift in Sources */,
+				139D97B021886EB1008C4989 /* UserNotificationsDataController.swift in Sources */,
 				139D979B2187ED74008C4989 /* CoreDataDataController.swift in Sources */,
+				139D97AA21886DB0008C4989 /* UserNotifications+Utilities.swift in Sources */,
 				13065A87218665D10044DB50 /* CoreDataDebugConfiguration.swift in Sources */,
+				139D97AC21886DCA008C4989 /* UserNotificationsConfiguration.swift in Sources */,
 				13065A4F218640BE0044DB50 /* UITableView+Registration.swift in Sources */,
 				139D97A72187F6A2008C4989 /* ManagedObjectDataController.swift in Sources */,
 				13065A4C218640530044DB50 /* DebugConfigurationsViewController.swift in Sources */,
+				139D97AE21886E22008C4989 /* UserNotificationsViewController.swift in Sources */,
 				13065A84218661770044DB50 /* DirectoryDataController.swift in Sources */,
 				13065A47218640070044DB50 /* DebugConfiguration.swift in Sources */,
 				13065A492186401A0044DB50 /* UserDefaultsDebugConfiguration.swift in Sources */,

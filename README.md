@@ -15,8 +15,8 @@ Simple Device Debugging
 let container = NSPersistentContainer(name: "Database")
 
 let configs = [
-  UserDefaultsDebugConfiguration(userDefaults: UserDefaults.standard),
-  CoreDataDebugConfiguration(container: container)
+    UserDefaultsDebugConfiguration(userDefaults: UserDefaults.standard),
+    CoreDataDebugConfiguration(container: container)
 ]
 
 ```
@@ -42,9 +42,9 @@ viewController.present(debugVC, animated: true, completion: nil)
 * CoreData
 * FileManager
 * UserDefaults
+* UserNotifications
 
 ## Planned Configuration Support
 * CoreBluetooth
 * CoreLocation
 * HealthKit
-* UserNotifications

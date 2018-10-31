@@ -7,6 +7,7 @@
 //
 
 import CoreData
+import CoreLocation
 import UserNotifications
 import UIKit
 import XYDebugKit
@@ -86,7 +87,8 @@ extension AppCoordinator: RootViewControllerDelegate {
                 UserDefaultsDebugConfiguration(userDefaults: UserDefaults.standard, suiteName: nil),
                 DirectoryDebugConfiguration(url: directoryURL),
                 CoreDataDebugConfiguration(container: container),
-                UserNotificationsConfiguration(notificationCenter: UNUserNotificationCenter.current())
+                UserNotificationsConfiguration(notificationCenter: UNUserNotificationCenter.current()),
+                LocationConfiguration(manager: CLLocationManager())
             ])
             debugVC.delegate = self
             rootViewController.present(debugVC, animated: true, completion: nil)

@@ -43,6 +43,8 @@
 		139D97B22188F6C9008C4989 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B12188F6C9008C4989 /* Cell.swift */; };
 		139D97B52188FBF2008C4989 /* NotificationRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B42188FBF2008C4989 /* NotificationRequestViewController.swift */; };
 		139D97B721890D2D008C4989 /* NotificationRequestDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B621890D2D008C4989 /* NotificationRequestDataController.swift */; };
+		139D97BA2189C0A8008C4989 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97B92189C0A8008C4989 /* LocationViewController.swift */; };
+		139D97BC2189C0F4008C4989 /* LocationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D97BB2189C0F4008C4989 /* LocationConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +110,8 @@
 		139D97B12188F6C9008C4989 /* Cell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		139D97B42188FBF2008C4989 /* NotificationRequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestViewController.swift; sourceTree = "<group>"; };
 		139D97B621890D2D008C4989 /* NotificationRequestDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationRequestDataController.swift; sourceTree = "<group>"; };
+		139D97B92189C0A8008C4989 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		139D97BB2189C0F4008C4989 /* LocationConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 				13065A54218644450044DB50 /* Debug */,
 				13065A4A218640460044DB50 /* DebugConfigurations */,
 				13065A7E21865E900044DB50 /* Directory */,
+				139D97B82189C088008C4989 /* Location */,
 				13065A502186415C0044DB50 /* UserDefaults */,
 				139D97A821886D8D008C4989 /* UserNotifications */,
 				13065A51218641890044DB50 /* Supporting Files */,
@@ -309,6 +314,15 @@
 			path = NotificationRequest;
 			sourceTree = "<group>";
 		};
+		139D97B82189C088008C4989 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				139D97BB2189C0F4008C4989 /* LocationConfiguration.swift */,
+				139D97B92189C0A8008C4989 /* LocationViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -425,9 +439,11 @@
 				13065A56218644530044DB50 /* DebugViewController.swift in Sources */,
 				139D97B52188FBF2008C4989 /* NotificationRequestViewController.swift in Sources */,
 				139D97B721890D2D008C4989 /* NotificationRequestDataController.swift in Sources */,
+				139D97BC2189C0F4008C4989 /* LocationConfiguration.swift in Sources */,
 				13065A8221865EF00044DB50 /* DirectoryDebugConfiguration.swift in Sources */,
 				13065A582186453F0044DB50 /* UIView+Autolayout.swift in Sources */,
 				139D97A02187EFDE008C4989 /* ManagedObjectsDataController.swift in Sources */,
+				139D97BA2189C0A8008C4989 /* LocationViewController.swift in Sources */,
 				13065A89218666170044DB50 /* CoreDataViewController.swift in Sources */,
 				13065A7B218658350044DB50 /* UserDefaultsViewController.swift in Sources */,
 				13065A7D21865AD20044DB50 /* UserDefaultsDataController.swift in Sources */,

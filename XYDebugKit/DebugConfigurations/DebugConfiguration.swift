@@ -15,6 +15,7 @@ public enum DebugConfigurationType {
     case directory
     case coreData
     case userNotifications
+    case location
     
     var displayName: String {
         switch self {
@@ -26,6 +27,8 @@ public enum DebugConfigurationType {
             return "Core Data"
         case .userNotifications:
             return "User Notifications"
+        case .location:
+            return "Location"
         }
     }
 }

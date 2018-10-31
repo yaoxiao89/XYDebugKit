@@ -2,8 +2,8 @@
 //  NotificationRequestDataController.swift
 //  XYDebugKit
 //
-//  Created by Xiao Yao on 10/30/18.
 //  Copyright © 2018 Xiao Yao. All rights reserved.
+//  See LICENSE.txt for licensing information.
 //
 
 import UserNotifications

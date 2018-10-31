@@ -75,6 +75,7 @@ extension DebugConfigurationsViewController {
     }
     
     func bindCell(_ cell: DebugCell, to configuration: DebugConfiguration) {
+        cell.accessoryType = .disclosureIndicator
         cell.subtitleLabel.text = configuration.type.displayName
         switch configuration {
         case let config as UserDefaultsDebugConfiguration:
@@ -86,6 +87,8 @@ extension DebugConfigurationsViewController {
             cell.titleLabel.text = config.container.name
         case let config as UserNotificationsConfiguration:
             cell.titleLabel.text = "Current"
+        case let config as LocationConfiguration:
+            cell.titleLabel.text = "Location"
         default:
             os_log("Unsupported debug configuration: %@", String(describing: configuration))
         }

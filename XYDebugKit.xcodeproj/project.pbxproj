@@ -30,6 +30,9 @@
 		13065A87218665D10044DB50 /* CoreDataDebugConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13065A86218665D10044DB50 /* CoreDataDebugConfiguration.swift */; };
 		13065A89218666170044DB50 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13065A88218666170044DB50 /* CoreDataViewController.swift */; };
 		13065A8D218666B90044DB50 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13065A8B218666B90044DB50 /* Database.xcdatamodeld */; };
+		131998A4218C631C0006CCA6 /* LocationDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131998A3218C631C0006CCA6 /* LocationDataController.swift */; };
+		131998A6218DE8540006CCA6 /* CLLocationManager+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131998A5218DE8540006CCA6 /* CLLocationManager+Utilities.swift */; };
+		131998A8218DEA8C0006CCA6 /* DebugValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 131998A7218DEA8C0006CCA6 /* DebugValue.swift */; };
 		139D979B2187ED74008C4989 /* CoreDataDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D979A2187ED74008C4989 /* CoreDataDataController.swift */; };
 		139D979D2187EFB5008C4989 /* ManagedObjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D979C2187EFB5008C4989 /* ManagedObjectsViewController.swift */; };
 		139D97A02187EFDE008C4989 /* ManagedObjectsDataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139D979F2187EFDE008C4989 /* ManagedObjectsDataController.swift */; };
@@ -97,6 +100,9 @@
 		13065A86218665D10044DB50 /* CoreDataDebugConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDebugConfiguration.swift; sourceTree = "<group>"; };
 		13065A88218666170044DB50 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		13065A8C218666B90044DB50 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		131998A3218C631C0006CCA6 /* LocationDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataController.swift; sourceTree = "<group>"; };
+		131998A5218DE8540006CCA6 /* CLLocationManager+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationManager+Utilities.swift"; sourceTree = "<group>"; };
+		131998A7218DEA8C0006CCA6 /* DebugValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugValue.swift; sourceTree = "<group>"; };
 		139D979A2187ED74008C4989 /* CoreDataDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataDataController.swift; sourceTree = "<group>"; };
 		139D979C2187EFB5008C4989 /* ManagedObjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectsViewController.swift; sourceTree = "<group>"; };
 		139D979F2187EFDE008C4989 /* ManagedObjectsDataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedObjectsDataController.swift; sourceTree = "<group>"; };
@@ -180,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				13065A52218642A30044DB50 /* DebugCell.swift */,
+				131998A7218DEA8C0006CCA6 /* DebugValue.swift */,
 				13065A4E218640BE0044DB50 /* UITableView+Registration.swift */,
 				13065A572186453F0044DB50 /* UIView+Autolayout.swift */,
 			);
@@ -317,7 +324,9 @@
 		139D97B82189C088008C4989 /* Location */ = {
 			isa = PBXGroup;
 			children = (
+				131998A5218DE8540006CCA6 /* CLLocationManager+Utilities.swift */,
 				139D97BB2189C0F4008C4989 /* LocationConfiguration.swift */,
+				131998A3218C631C0006CCA6 /* LocationDataController.swift */,
 				139D97B92189C0A8008C4989 /* LocationViewController.swift */,
 			);
 			path = Location;
@@ -437,11 +446,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				13065A56218644530044DB50 /* DebugViewController.swift in Sources */,
+				131998A4218C631C0006CCA6 /* LocationDataController.swift in Sources */,
+				131998A6218DE8540006CCA6 /* CLLocationManager+Utilities.swift in Sources */,
 				139D97B52188FBF2008C4989 /* NotificationRequestViewController.swift in Sources */,
 				139D97B721890D2D008C4989 /* NotificationRequestDataController.swift in Sources */,
 				139D97BC2189C0F4008C4989 /* LocationConfiguration.swift in Sources */,
 				13065A8221865EF00044DB50 /* DirectoryDebugConfiguration.swift in Sources */,
 				13065A582186453F0044DB50 /* UIView+Autolayout.swift in Sources */,
+				131998A8218DEA8C0006CCA6 /* DebugValue.swift in Sources */,
 				139D97A02187EFDE008C4989 /* ManagedObjectsDataController.swift in Sources */,
 				139D97BA2189C0A8008C4989 /* LocationViewController.swift in Sources */,
 				13065A89218666170044DB50 /* CoreDataViewController.swift in Sources */,

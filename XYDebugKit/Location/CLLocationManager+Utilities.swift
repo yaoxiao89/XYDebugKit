@@ -22,6 +22,8 @@ extension CLAuthorizationStatus {
             return "Authorized Always"
         case .authorizedWhenInUse:
             return "Authorized When In Use"
+        @unknown default:
+            return "Unknown CLAuthorizationStatus"
         }
     }
     

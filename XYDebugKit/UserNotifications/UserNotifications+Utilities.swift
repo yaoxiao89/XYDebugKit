@@ -22,6 +22,8 @@ extension UNAuthorizationStatus {
             return "Not Determined"
         case .provisional:
             return "Provisional"
+        @unknown default:
+            return "Unknown UNAuthorizationStatus"
         }
     }
     
@@ -39,6 +41,8 @@ extension UNNotificationSetting {
             return "Enabled"
         case .notSupported:
             return "Not Supported"
+        @unknown default:
+            return "Unknown UNNotificationSetting"
         }
     }
     
@@ -56,6 +60,8 @@ extension UNAlertStyle {
             return "Banner"
         case .none:
             return "None"
+        @unknown default:
+            return "Unknown UNAlertStyle"
         }
     }
     

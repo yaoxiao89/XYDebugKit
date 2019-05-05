@@ -38,7 +38,7 @@ extension CoreDataViewController {
     }
     
     private func setupTableView() {
-        tableView.register(DebugCell.self)
+        tableView.debugKit_register(DebugCell.self)
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -83,7 +83,7 @@ extension CoreDataViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
+        let cell = tableView.debugKit_dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
         let entity = dataController.value(at: indexPath)
         bindCell(cell, to: entity)
         return cell

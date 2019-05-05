@@ -50,7 +50,7 @@ extension NotificationRequestViewController {
         
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
-        tableView.register(DebugCell.self)
+        tableView.debugKit_register(DebugCell.self)
     }
     
 }
@@ -86,7 +86,7 @@ extension NotificationRequestViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let section = Section(rawValue: indexPath.section) else { return UITableViewCell() }
         
-        let cell = tableView.dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
+        let cell = tableView.debugKit_dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
         
         switch section {
         case .identifier:

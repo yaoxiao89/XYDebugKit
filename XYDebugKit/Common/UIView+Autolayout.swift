@@ -10,7 +10,7 @@ import UIKit
 
 extension UIView {
     
-    func pinToViewController(_ viewController: UIViewController) {
+    func debugKit_pinToViewController(_ viewController: UIViewController) {
         translatesAutoresizingMaskIntoConstraints = false
         viewController.view.addSubview(self)
         
@@ -22,7 +22,7 @@ extension UIView {
         ])
     }
     
-    func pinToLayoutGuide(_ guide: UILayoutGuide) {
+    func debugKit_pinToLayoutGuide(_ guide: UILayoutGuide) {
         NSLayoutConstraint.activate([
             leadingAnchor.constraint(equalTo: guide.leadingAnchor),
             trailingAnchor.constraint(equalTo: guide.trailingAnchor),

@@ -36,7 +36,7 @@ extension LocationViewController {
     }
     
     private func setupTableView() {
-        tableView.register(DebugCell.self)
+        tableView.debugKit_register(DebugCell.self)
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -54,7 +54,7 @@ extension LocationViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
+        let cell = tableView.debugKit_dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
         let value = dataController.values[indexPath.row]
         bindCell(cell, to: value)
         return cell

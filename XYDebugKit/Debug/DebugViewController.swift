@@ -65,7 +65,7 @@ extension DebugViewController {
     
     func setupContentViewController() {
         addChild(contentViewController)
-        contentViewController.view.pinToViewController(self)
+        contentViewController.view.debugKit_pinToViewController(self)
         contentViewController.didMove(toParent: self)
     }
     

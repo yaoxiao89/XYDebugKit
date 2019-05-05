@@ -45,7 +45,7 @@ extension UserNotificationsViewController {
     }
     
     private func setupTableView() {
-        tableView.register(DebugCell.self)
+        tableView.debugKit_register(DebugCell.self)
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -103,7 +103,7 @@ extension UserNotificationsViewController {
             return UITableViewCell()
         }
         
-        let cell = tableView.dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
+        let cell = tableView.debugKit_dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
         cell.selectionStyle = .none
         
         switch s {

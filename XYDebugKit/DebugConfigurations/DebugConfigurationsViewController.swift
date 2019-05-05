@@ -51,7 +51,7 @@ extension DebugConfigurationsViewController {
     }
     
     func setupTableView() {
-        tableView.register(DebugCell.self)
+        tableView.debugKit_register(DebugCell.self)
         tableView.estimatedRowHeight = 44.0
         tableView.rowHeight = UITableView.automaticDimension
         tableView.tableFooterView = UIView()
@@ -68,7 +68,7 @@ extension DebugConfigurationsViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
+        let cell = tableView.debugKit_dequeueReusableCell(DebugCell.self, forIndexPath: indexPath)
         let config = configurations[indexPath.row]
         bindCell(cell, to: config)
         return cell
